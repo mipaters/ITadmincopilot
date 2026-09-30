@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0e1b2e">
+    <meta name="description" content="A practical senior IT-admin copilot that helps administrators troubleshoot, plan, and support users.">
+    <title>IT Admin Copilot · Overview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="#/" aria-label="IT Admin Copilot home">
+          <span class="brand-mark"><span></span><span></span><span></span><span></span></span>
+          <span class="brand-name">IT admin<span>copilot</span></span>
+        </a>
+        <div class="environment"><span class="environment-dot"></span> ADMIN DEMO ENVIRONMENT</div>
+        <div class="nav-label">WORKSPACE</div>
+        <nav class="primary-nav" id="primary-nav" aria-label="Main navigation"></nav>
+        <div class="sidebar-bottom">
+          <div class="governance-card">
+            <div class="governance-icon">✓</div>
+            <div><strong>Guidance, not automation</strong><span>You stay in control</span></div>
+            <span class="online-dot"></span>
+          </div>
+          <div class="profile">
+            <div class="avatar">MP</div>
+            <div class="profile-copy"><strong>Morgan Patel</strong><span>IT Operations · Admin</span></div>
+            <span class="profile-more">···</span>
+          </div>
+        </div>
+      </aside>
+
+      <div class="main-column">
+        <header class="topbar">
+          <button class="mobile-menu icon-button" id="menu-toggle" aria-label="Toggle navigation"><span class="hamburger"></span></button>
+          <div class="breadcrumb"><span>Workspace</span><span class="breadcrumb-slash">/</span><strong id="breadcrumb-current">Command center</strong></div>
+          <div class="topbar-actions">
+            <div class="demo-pill"><span></span> Mock data only</div>
+            <button class="icon-button theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg></button>
+            <button class="icon-button notification-button" aria-label="Notifications"><svg viewBox="0 0 24 24"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg><i></i></button>
+            <div class="top-avatar">MP</div>
+          </div>
+        </header>
+        <main id="app-content" class="page-content"></main>
+        <footer class="app-footer"><span>IT Admin Copilot</span><span>Demo environment · No tenant connection · Nothing runs automatically</span></footer>
+      </div>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
